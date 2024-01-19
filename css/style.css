@@ -62,7 +62,6 @@ body {
 
 /* CARDS */
 .cards-container {
-    background: #D99414;
     margin: 10px 5%;
     display: flex;
     flex-wrap: wrap;
@@ -73,15 +72,18 @@ body {
     width: 300px;
     background-color: #222;
     border: 1px solid #D99414;
-    overflow: hidden;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.cards-container .card .img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
 }
 
 .cards-container .card img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -111,13 +113,25 @@ body {
 .cards-container .card button {
     margin: 10px auto;
     background: /* Gradient in Hex */
-    linear-gradient(to right, #F2732E 0%, 13.945578231292515%, #F31544 27.89115646258503%, 39.35860058309038%, #7C01F2 50.82604470359572%, 63.16812439261419%, #A70084 75.51020408163265%, 87.75510204081633%, #FF9D01 100%);
-    
+    linear-gradient(to right, #F2732E 0%, 13.945578231292515%, #F31544 27.89115646258503%, 39.35860058309038%, #7C01F2 50.82604470359572%, 63.16812439261419%, #A70084 75.51020408163265%, 87.75510204081633%, #FF9D01 100%),
+
     /* Gradient in RGBA */
-    linear-gradient(to right, rgba(242, 115, 46, 1) 0%, 13.945578231292515%, rgba(243, 21, 68, 1) 27.89115646258503%, 39.35860058309038%, rgba(124, 1, 242, 1) 50.82604470359572%, 63.16812439261419%, rgba(167, 0, 132, 1) 75.51020408163265%, 87.75510204081633%, rgba(255, 157, 1, 1) 100%);
+    linear-gradient(to right, rgba(242, 115, 46, 1) 0%, 13.945578231292515%, rgba(243, 21, 68, 1) 27.89115646258503%, 39.35860058309038%, rgba(124, 1, 242, 1) 50.82604470359572%, 63.16812439261419%, rgba(167, 0, 132, 1) 75.51020408163265%, 87.75510204081633%, rgba(255, 157, 1, 1) 100%)
     ;
     color: #000;
     border: 1px solid #000;
     padding: 5px 50px;
     font-size: 20px;
+    border-radius: 10px;
 }
+
+.alert {
+    padding: 20px;
+    color:red;
+    border: 2px solid red;
+    background: #fafafa;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+}   
